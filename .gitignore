@@ -2,6 +2,8 @@
 /lib
 /classes
 /checkouts
+/.idea
+clj_trainer.iml
 pom.xml
 *.jar
 *.class
