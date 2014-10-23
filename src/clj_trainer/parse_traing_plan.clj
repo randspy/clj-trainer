@@ -13,6 +13,10 @@
 (defn parse-int [s]
   (Integer. (re-find  #"\d+" s )))
 
-(defn timer [plan-item]
+
+(defn time_sec [plan-item]
   (let [timer-index 7]
-    (* 1000 (parse-int (.substring plan-item timer-index)))))
+    (.substring plan-item timer-index)))
+
+(defn time-to-miliseconds [time]
+  (* 1000 (parse-int time)))

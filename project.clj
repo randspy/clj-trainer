@@ -7,4 +7,6 @@
                  [facts/speech-synthesis "1.0.0"]]
   :profiles {:dev {:dependencies [[speclj "3.1.0"]]}}
   :plugins [[speclj "3.1.0"]]
-  :test-paths ["spec"])
+  :test-paths ["spec"]
+  :main clj-trainer.core
+  :aot [clj-trainer.core])
